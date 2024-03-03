@@ -1,0 +1,3 @@
+[submodule "implementation/SentimentAnalysis/profiler/tracy"]
+	path = implementation/SentimentAnalysis/profiler/tracy
+	url = https://github.com/wolfpld/tracy.git

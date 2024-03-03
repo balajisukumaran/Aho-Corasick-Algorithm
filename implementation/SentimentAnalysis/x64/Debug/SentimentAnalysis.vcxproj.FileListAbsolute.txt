@@ -1,0 +1,4 @@
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\x64\Debug\SentimentAnalysis.vcxproj.MdMergeInputs.cache
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\x64\Debug\SentimentAnalysis.vcxproj.cppwinrt_plat.cache
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\x64\Debug\SentimentAnalysis.vcxproj.cppwinrt_comp.cache
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\x64\Debug\SentimentAnalysis.exe

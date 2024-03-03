@@ -1,0 +1,9 @@
+namespace SentimentAnalysis
+{
+    [default_interface]
+    runtimeclass config : Windows.UI.Xaml.Controls.Page
+    {
+        config();
+        Int32 MyProperty;
+    }
+}

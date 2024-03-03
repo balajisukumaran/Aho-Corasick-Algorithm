@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\KnuthMorrisPratt">
+      <UniqueIdentifier>{9f8fb9bd-e83e-4233-b65e-104895dfccca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AhoCorasick">
+      <UniqueIdentifier>{a22dbf46-6f9d-40bd-aa57-fe734a3d9f7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Services">
+      <UniqueIdentifier>{23f83e73-56ae-4b8a-b782-5a7744d45f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TrieSearch">
+      <UniqueIdentifier>{9c82f7a7-b654-404f-95e3-9dd20320247e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SentimentAnalysis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="profiler\tracy\TracyClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AhoCorasickAutomaton.cpp">
+      <Filter>Source Files\AhoCorasick</Filter>
+    </ClCompile>
+    <ClCompile Include="KnuthMorrisPratt.cpp">
+      <Filter>Source Files\KnuthMorrisPratt</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis.cpp">
+      <Filter>Source Files\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="FileService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrieSearch.cpp">
+      <Filter>Source Files\TrieSearch</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AhoCorasickAutomaton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IPatternMatching.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KnuthMorrisPratt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectoryAnalysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileAnalysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrieSearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="packages.config" />
+    <None Include="config.ini" />
+  </ItemGroup>
+</Project>
