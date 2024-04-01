@@ -25,6 +25,9 @@
     <Filter Include="Source Files\TrieSearch">
       <UniqueIdentifier>{9c82f7a7-b654-404f-95e3-9dd20320247e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Objects">
+      <UniqueIdentifier>{03506da2-ca5c-4cea-b158-4733914c6e79}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SentimentAnalysis.cpp">
@@ -42,7 +45,7 @@
     <ClCompile Include="KnuthMorrisPratt.cpp">
       <Filter>Source Files\KnuthMorrisPratt</Filter>
     </ClCompile>
-    <ClCompile Include="Analysis.cpp">
+    <ClCompile Include="SequentialAnalysis.cpp">
       <Filter>Source Files\Services</Filter>
     </ClCompile>
     <ClCompile Include="FileService.cpp">
@@ -50,6 +53,12 @@
     </ClCompile>
     <ClCompile Include="TrieSearch.cpp">
       <Filter>Source Files\TrieSearch</Filter>
+    </ClCompile>
+    <ClCompile Include="ParellelAnalysis.cpp">
+      <Filter>Source Files\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis.cpp">
+      <Filter>Source Files\Objects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +87,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TrieSearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IAnalysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SequentialAnalysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParellelAnalysis.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

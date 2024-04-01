@@ -4,16 +4,37 @@
 
 using namespace std;
 
+/// <summary>
+/// Trie Node
+/// </summary>
 class Node {
 
 public:
-	string currentWord;
-	unordered_map<char, Node*> child;
-	Node* suffixLink;
-	Node* outputLink;
+    /// <summary>
+    /// Current word  - If present leaf node
+    /// </summary>
+    string currentWord;
 
-	Node() {
-		suffixLink = nullptr;
-		outputLink = nullptr;
-	}
+    /// <summary>
+    /// Node childrens
+    /// </summary>
+    unordered_map<char, Node*> child;
+
+    /// <summary>
+    /// Suffix link
+    /// </summary>
+    Node* suffixLink;
+
+    /// <summary>
+    /// Output Link
+    /// </summary>
+    Node* outputLink;
+
+    /// <summary>
+    /// contructor for TrieNode
+    /// </summary>
+    Node() {
+        suffixLink = nullptr;
+        outputLink = nullptr;
+    }
 };

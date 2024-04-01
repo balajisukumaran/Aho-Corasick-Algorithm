@@ -1,5 +1,0 @@
-﻿  FileService.cpp
-C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\FileService.cpp(63,9): warning C4101: 'occurency': unreferenced local variable
-  Helper.cpp
-  Generating Code...
-  SentimentAnalysis.vcxproj -> C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\x64\Debug\SentimentAnalysis.exe

@@ -3,116 +3,124 @@
 
 using namespace std;
 
+/// <summary>
+/// PreProcesses patterns to search 
+/// </summary>
+/// <param name="wordBag">bag of words</param>
 void AhoCorasickAutomaton::preProcessing(vector<string>& wordBag) {
-	this->buildTrie(wordBag);
-	this->buildSuffixAndOutputLinks();
+    this->buildTrie(wordBag);
+    this->buildSuffixAndOutputLinks();
 }
 
-unordered_map<string, int> AhoCorasickAutomaton::searchIn(string& sentence) {
 
-	Node* parent = this->root;
-	unordered_map<string, int> result;
+/// <summary>
+/// Search for the patterns
+/// </summary>
+/// <param name="sentence">sentence to search</param>
+/// <returns></returns>
+map<string, int> AhoCorasickAutomaton::searchIn(const string& storyContent) {
+    Node* parent = this->root;
+    map<string, int> result;
+    string sentence = " " + storyContent + " ";  // Add padding to handle beginning and end of string.
 
-	for (size_t i = 0; i < sentence.length(); i++) {
-		char c = sentence[i];
+    for (size_t i = 1; i < sentence.length() - 1; i++) {
+        char c = sentence[i];
 
-		if (parent->child.find(c) != parent->child.end()) {
-			parent = parent->child[c];
+        // Proceed with the next node in the trie or follow the suffix links back
+        while (parent != this->root && parent->child.find(c) == parent->child.end()) {
+            parent = parent->suffixLink;
+        }
 
-			if (parent->currentWord != "") {
-				
-				if (i < sentence.length() && Helper::punctuation.find(sentence[i + 1]) != Helper::punctuation.end()) {
-					string wordFound = parent->currentWord;
+        if (parent->child.find(c) != parent->child.end()) {
+            parent = parent->child[c];
+        }
 
-					if (result.find(wordFound) == result.end())
-						result[wordFound] = 0;
+        // Now parent is either root or a node with the current character c as a valid child
+        if (parent != nullptr) {
+            Node* temp = parent;
 
-					result[wordFound] = result[wordFound] + 1;
-				}
-			}
+            // Check for matches and follow output links
+            while (temp != nullptr && temp != this->root) {
+                if (!temp->currentWord.empty() && Helper::isWordBoundary(sentence[i - temp->currentWord.length()]) && Helper::isWordBoundary(sentence[i + 1])) {
+                    string wordFound = temp->currentWord;
 
-			Node* mol = parent->outputLink;
+                    if (result.find(wordFound) == result.end()) {
+                        result[wordFound] = 1;
+                    }
+                    else {
+                        result[wordFound]++;
+                    }
+                }
+                temp = temp->outputLink;
+            }
+        }
+    }
 
-			while (mol != nullptr) {
-
-				if (i < sentence.length() && Helper::punctuation.find(sentence[i + 1]) != Helper::punctuation.end()) {
-					string wordFound = mol->currentWord; 
-
-					if (result.find(wordFound) == result.end())
-						result[wordFound] = 0; 
-					
-					result[wordFound] = result[wordFound] + 1; 
-				}
-				mol = mol->outputLink; 
-			}
-		}
-		else {
-
-			while (parent != this->root && parent->child.find(c) == parent->child.end()) { 
-				parent = parent->suffixLink; 
-			}
-			
-			if (parent->child.find(c) != parent->child.end()) i--;
-		}
-	}
-
-	return result;
+    return result;
 }
 
+
+/// <summary>
+/// build the trie
+/// </summary>
+/// <param name="patterns">patterns</param>
 void AhoCorasickAutomaton::buildTrie(vector<string>& patterns) {
 
-	this->root = new Node(); // Ensure root is initialized
-	for (size_t i = 0; i < patterns.size(); i++) {
-		Node* curr = root;
-		for (char c : patterns[i]) {
-			if (curr->child.find(c) != curr->child.end()) {
-				curr = curr->child[c];
-			}
-			else {
-				Node* newNode = new Node();
-				curr->child[c] = newNode;
-				curr = newNode;
-			}
-		}
-		curr->currentWord = patterns[i];
-	}
+    this->root = new Node(); // Ensure root is initialized
+    for (size_t i = 0; i < patterns.size(); i++) {
+        Node* curr = root;
+        for (char c : patterns[i]) {
+            if (curr->child.find(c) != curr->child.end()) {
+                curr = curr->child[c];
+            }
+            else {
+                Node* newNode = new Node();
+                curr->child[c] = newNode;
+                curr = newNode;
+            }
+        }
+        curr->currentWord = patterns[i];
+    }
 }
 
+/// <summary>
+/// build the suffix and output links for the trie
+/// </summary>
 void AhoCorasickAutomaton::buildSuffixAndOutputLinks() {
-	this->root->suffixLink = this->root;
+    this->root->suffixLink = this->root;
 
-	queue<Node*> queue;
+    queue<Node*> queue;
 
-	for (auto& rc : root->child) {
-		queue.push(rc.second);
-		rc.second->suffixLink = root;
-	}
+    for (auto& rc : root->child) {
+        queue.push(rc.second);
+        rc.second->suffixLink = root;
+    }
 
-	while (!queue.empty()) {
-		Node* curState = queue.front();
-		queue.pop();
+    while (!queue.empty()) {
+        Node* curState = queue.front();
+        queue.pop();
 
-		for (auto& cc : curState->child) {
-			Node* childNode = cc.second;
-			Node* temp = curState->suffixLink;
-			while (temp != root && temp->child.find(cc.first) == temp->child.end()) {
-				temp = temp->suffixLink;
-			}
+        for (auto& cc : curState->child) {
+            Node* childNode = cc.second;
+            Node* temp = curState->suffixLink;
+            while (temp != root && temp->child.find(cc.first) == temp->child.end()) {
+                temp = temp->suffixLink;
+            }
 
-			if (temp->child.find(cc.first) != temp->child.end()) {
-				childNode->suffixLink = temp->child[cc.first];
-			}
-			else {
-				childNode->suffixLink = root;
-			}
-			queue.push(childNode);
-		}
+            if (temp->child.find(cc.first) != temp->child.end()) {
+                childNode->suffixLink = temp->child[cc.first];
+            }
+            else {
+                childNode->suffixLink = root;
+            }
+            queue.push(childNode);
+        }
 
-		if (curState->suffixLink->currentWord != "") {
-			curState->outputLink = curState->suffixLink;
-		}
-		else {
-			curState->outputLink = curState->suffixLink->outputLink;
-		}
-	}
+        if (curState->suffixLink->currentWord != "") {
+            curState->outputLink = curState->suffixLink;
+        }
+        else {
+            curState->outputLink = curState->suffixLink->outputLink;
+        }
+    }
 }

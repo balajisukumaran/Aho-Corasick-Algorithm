@@ -133,6 +133,8 @@
   <ItemGroup>
     <ClCompile Include="AhoCorasickAutomaton.cpp" />
     <ClCompile Include="Analysis.cpp" />
+    <ClCompile Include="SequentialAnalysis.cpp" />
+    <ClCompile Include="ParellelAnalysis.cpp" />
     <ClCompile Include="FileService.cpp" />
     <ClCompile Include="Helper.cpp" />
     <ClCompile Include="KnuthMorrisPratt.cpp" />
@@ -142,6 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AhoCorasickAutomaton.h" />
+    <ClInclude Include="IAnalysis.h" />
     <ClInclude Include="DirectoryAnalysis.h" />
     <ClInclude Include="FileAnalysis.h" />
     <ClInclude Include="FileService.h" />
@@ -149,6 +152,8 @@
     <ClInclude Include="IPatternMatching.h" />
     <ClInclude Include="KnuthMorrisPratt.h" />
     <ClInclude Include="Node.h" />
+    <ClInclude Include="ParellelAnalysis.h" />
+    <ClInclude Include="SequentialAnalysis.h" />
     <ClInclude Include="TrieSearch.h" />
   </ItemGroup>
   <ItemGroup>
