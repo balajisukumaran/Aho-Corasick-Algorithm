@@ -80,7 +80,7 @@ void ParellelAnalysis::generateReport() {
     vector<future<SearchResult>> futuresStop;
     vector<FileDetails> fileDetails;
     auto totalTimeStart = std::chrono::high_resolution_clock::now();
-
+    
     // Launch asynchronous tasks
     int index = 0;
     for (auto& file : files) {
@@ -103,7 +103,6 @@ void ParellelAnalysis::generateReport() {
         }
         catch (const std::exception& e) {
             std::cerr << "An exception occurred: " << e.what() << std::endl;
-            std::cin.get();
             fileDetails.push_back(FileDetails{ index, file.filename().generic_string(), 0 });
         }
         index++;

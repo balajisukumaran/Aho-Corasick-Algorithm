@@ -101,7 +101,6 @@ void SequentialAnalysis::generateReport() {
         }
         catch (const std::exception& e) {
             std::cerr << "An exception occurred: " << e.what() << std::endl;
-            std::cin.get();
         }
     }
     auto totalTimeEnd = std::chrono::high_resolution_clock::now();

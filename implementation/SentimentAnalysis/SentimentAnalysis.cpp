@@ -44,7 +44,6 @@ void main()
         // Stop the console from closing.
         std::cout << "Press Enter to continue...";
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        std::cin.get();
     }
 
     return;

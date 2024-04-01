@@ -67,19 +67,19 @@ public:
             this->positiveMatch = new AhoCorasickAutomaton();
             this->negativeMatch = new AhoCorasickAutomaton();
             this->stopMatch = new AhoCorasickAutomaton();
-            this->algorithmType = "Aho-Corasick Parellel";
+            this->algorithmType = "AhoCorasickParellel";
         }
         else if (algorithm == 2) {
             this->positiveMatch = new TrieSearch();
             this->negativeMatch = new TrieSearch();
             this->stopMatch = new TrieSearch();
-            this->algorithmType = "Trie-Search Parellel";
+            this->algorithmType = "TrieSearchParellel";
         }
         else if (algorithm == 3) {
             this->positiveMatch = new KnuthMorrisPratt();
             this->negativeMatch = new KnuthMorrisPratt();
             this->stopMatch = new KnuthMorrisPratt();
-            this->algorithmType = "KMP Parellel";
+            this->algorithmType = "KMPParellel";
         }
 
         assignPatterns();
