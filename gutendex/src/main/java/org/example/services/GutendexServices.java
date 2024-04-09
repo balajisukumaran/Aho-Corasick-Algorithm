@@ -12,7 +12,17 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.object.Book;
 import org.example.object.Books;
 
+/**
+ * Contains methods to hit the Gutendex API
+ */
 public class GutendexServices {
+
+    /**
+     * gets the books details
+     * @return return book object (based on the output link)
+     * @throws IOException throws IO Exception
+     * @throws InterruptedException throws interrupted exception
+     */
     public Books getBooksDetail() throws IOException, InterruptedException {
 
         HttpClient httpClient = HttpClient.newBuilder()
@@ -29,6 +39,13 @@ public class GutendexServices {
         return mapper.readValue(response.body(), Books.class);
     }
 
+    /**
+     * get particular book details
+     * @param id book id
+     * @return book object based on the gutendex api
+     * @throws IOException throws IOException
+     * @throws InterruptedException InterruptedException
+     */
     public Book getBookDetail(int id) throws IOException, InterruptedException {
 
         HttpClient httpClient = HttpClient.newBuilder()

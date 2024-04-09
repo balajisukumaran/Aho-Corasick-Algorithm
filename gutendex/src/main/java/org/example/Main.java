@@ -8,9 +8,8 @@ public class Main {
     public static void main(String[] args) {
         try {
             GutendexServices services = new GutendexServices();
-            // Books books=services.getBooksDetail();
 
-            for (int i = 1001; i <= 11000; i++) {
+            for (int i = Constants.START_INDEX; i <= Constants.END_INDEX; i++) {
                 try {
                     Book book = services.getBookDetail(i);
 

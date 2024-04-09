@@ -9,8 +9,17 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+/**
+ * File services class
+ */
 public class FileServices {
 
+    /**
+     * saves books for the web url
+     *
+     * @param fileName location to save the file
+     * @param fileUrl  web url for the file
+     */
     public static void saveBook(String fileName, String fileUrl) {
         try {
             String filePath = Constants.BOOKS_FOLDER_PATH + fileName;
