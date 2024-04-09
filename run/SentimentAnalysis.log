@@ -1,0 +1,30 @@
+﻿  ParellelAnalysis.cpp
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\ParellelAnalysis.cpp(131,46): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\ParellelAnalysis.cpp(130,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\ParellelAnalysis.cpp(129,43): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\ParellelAnalysis.cpp(128,43): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\ParellelAnalysis.cpp(156,40): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\ParellelAnalysis.cpp(155,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\ParellelAnalysis.cpp(154,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\ParellelAnalysis.cpp(153,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\ParellelAnalysis.cpp(152,27): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\ParellelAnalysis.cpp(166,43): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  SentimentAnalysis.cpp
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\SentimentAnalysis.cpp(20,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  SequentialAnalysis.cpp
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\SequentialAnalysis.cpp(72,42): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\SequentialAnalysis.cpp(71,35): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\SequentialAnalysis.cpp(70,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\SequentialAnalysis.cpp(69,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\SequentialAnalysis.cpp(97,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\SequentialAnalysis.cpp(96,29): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\SequentialAnalysis.cpp(95,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\SequentialAnalysis.cpp(94,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\SequentialAnalysis.cpp(93,65): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\SequentialAnalysis.cpp(110,43): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating code
+  3 of 4010 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    6 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  SentimentAnalysis.vcxproj -> C:\Users\balaj\source\repos\Aho-Corasick-Algorithm\implementation\SentimentAnalysis\x64\Release\SentimentAnalysis.exe
