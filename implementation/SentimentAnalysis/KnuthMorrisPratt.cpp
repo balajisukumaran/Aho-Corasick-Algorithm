@@ -8,11 +8,11 @@
 void KnuthMorrisPratt::preProcessing(vector<string>& wordBag) {
 
     for (string& word : wordBag) {
-        int wordLength = word.length();
+        size_t wordLength = word.length();
         vector<int> lps(wordLength, 0);
 
-        int len = 0;
-        int i = 1;
+        size_t len = 0;
+        size_t i = 1;
 
         while (i < wordLength) {
             if (word[i] == word[len]) {
@@ -49,10 +49,10 @@ map<string, int> KnuthMorrisPratt::searchIn(const string& sentence) {
         const string& pattern = it.first;
         vector<int> prefixTable = it.second;
 
-        int m = pattern.length();
-        int n = paddedSentence.length();
-        int i = 0; // index for paddedSentence[]
-        int j = 0; // index for pattern[]
+        size_t m = pattern.length();
+        size_t n = paddedSentence.length();
+        size_t i = 0; // index for paddedSentence[]
+        size_t j = 0; // index for pattern[]
 
         // Start searching for the pattern in the sentence
         while (i < n) {

@@ -1,0 +1,100 @@
+{
+    "Algorithm": "AhoCorasickSequential",
+    "Preprocess Memory Used": "14464.00",
+    "Preprocess Time Taken": "19932700.00",
+    "Total Memory Used": "1120.00",
+    "Total Time Taken": "0.48",
+    "analysis": [
+        {
+            "TimeTaken": 0.2988016,
+            "name": "10TheKingJamesVersionofthetxt",
+            "negativeWords": 876,
+            "polarity": 300,
+            "positiveWords": 1176,
+            "stopWords": 332,
+            "totalWords": 749804
+        },
+        {
+            "TimeTaken": 0.0108364,
+            "name": "1TheDeclarationofIndependenctxt",
+            "negativeWords": 242,
+            "polarity": 325,
+            "positiveWords": 567,
+            "stopWords": 254,
+            "totalWords": 18382
+        },
+        {
+            "TimeTaken": 0.002179,
+            "name": "2TheUnitedStatesBillofRightxt",
+            "negativeWords": 44,
+            "polarity": 114,
+            "positiveWords": 158,
+            "stopWords": 133,
+            "totalWords": 3510
+        },
+        {
+            "TimeTaken": 0.0025673,
+            "name": "3JohnFKennedysInauguralAdtxt",
+            "negativeWords": 69,
+            "polarity": 169,
+            "positiveWords": 238,
+            "stopWords": 158,
+            "totalWords": 4338
+        },
+        {
+            "TimeTaken": 4e-07,
+            "name": "4LincolnsGettysburgAddress",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.0040479,
+            "name": "5TheUnitedStatesConstitutiontxt",
+            "negativeWords": 40,
+            "polarity": 178,
+            "positiveWords": 218,
+            "stopWords": 180,
+            "totalWords": 7314
+        },
+        {
+            "TimeTaken": 0.002769,
+            "name": "6GiveMeLibertyorGiveMeDeatxt",
+            "negativeWords": 72,
+            "polarity": 135,
+            "positiveWords": 207,
+            "stopWords": 159,
+            "totalWords": 4255
+        },
+        {
+            "TimeTaken": 0.0020697,
+            "name": "7TheMayflowerCompacttxt",
+            "negativeWords": 29,
+            "polarity": 109,
+            "positiveWords": 138,
+            "stopWords": 120,
+            "totalWords": 3459
+        },
+        {
+            "TimeTaken": 0.0023266,
+            "name": "8AbrahamLincolnsSecondInaugtxt",
+            "negativeWords": 46,
+            "polarity": 137,
+            "positiveWords": 183,
+            "stopWords": 156,
+            "totalWords": 3718
+        },
+        {
+            "TimeTaken": 0.004068,
+            "name": "9AbrahamLincolnsFirstInaugutxt",
+            "negativeWords": 108,
+            "polarity": 211,
+            "positiveWords": 319,
+            "stopWords": 192,
+            "totalWords": 6368
+        }
+    ],
+    "totalFiles": 10
+}

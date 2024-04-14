@@ -21,14 +21,13 @@
 #include <future>
 #include "Analysis.cpp"
 
-using namespace std;
 using namespace boost::property_tree;
 
 /// <summary>
 /// Search result
 /// </summary>
 struct SearchResult {
-    map<string, int> results;
+    map<std::string, int> results;
     double executionTime;
 };
 
@@ -36,8 +35,8 @@ struct SearchResult {
 /// File details
 /// </summary>
 struct FileDetails {
-    int index;
-    string fileName;
+    size_t index;
+    std::string fileName;
     long long wordCount;
 };
 
@@ -47,7 +46,7 @@ struct FileDetails {
 /// <param name="matcher">algorithm</param>
 /// <param name="content">content</param>
 /// <returns>search result</returns>
-SearchResult performSearchAndMeasureTime(IPatternMatching* matcher, const string& content) {
+SearchResult performSearchAndMeasureTime(IPatternMatching* matcher, const std::string& content) {
     auto start = std::chrono::high_resolution_clock::now();
     auto results = matcher->searchIn(content);
     auto finish = std::chrono::high_resolution_clock::now();
@@ -59,33 +58,46 @@ SearchResult performSearchAndMeasureTime(IPatternMatching* matcher, const string
 /// assign patterns and approiate classes based on the config file
 /// </summary>
 void ParellelAnalysis::assignPatterns() {
+    size_t memBeforePreprocessing = 0, memAfterPreprocessing = 0;
+
+    updateMemoryUsage(memBeforePreprocessing);
+    auto start = std::chrono::high_resolution_clock::now();
+
     this->positiveMatch->preProcessing(positiveWords);
     this->stopMatch->preProcessing(stopWords);
     this->negativeMatch->preProcessing(negativeWords);
+
+    updateMemoryUsage(memAfterPreprocessing);
+    auto finish = std::chrono::high_resolution_clock::now();
+    this->elapsedPreprocess = (finish - start).count();
+    this->memoryUsagePreprocessing = memAfterPreprocessing - memBeforePreprocessing;
 }
 
 /// <summary>
 /// Generate the report and output file
 /// </summary>
 void ParellelAnalysis::generateReport() {
-    vector<filesystem::path> files = Helper::getListofFiles(this->path);
+    std::vector<filesystem::path> files = Helper::getListofFiles(this->path);
 
-    vector<DirectoryAnalysis*> directoryAnalysisList;
-    vector<FileAnalysis*> fileAnalysisList;
-    vector<TextAnalysis*> textAnalysisList;
+    std::vector<DirectoryAnalysis*> directoryAnalysisList;
+    std::vector<FileAnalysis*> fileAnalysisList;
+    std::vector<TextAnalysis*> textAnalysisList;
 
     // We will store futures for asynchronous execution
-    vector<future<SearchResult>> futuresPositive;
-    vector<future<SearchResult>> futuresNegative;
-    vector<future<SearchResult>> futuresStop;
-    vector<FileDetails> fileDetails;
+    std::vector<future<SearchResult>> futuresPositive;
+    std::vector<future<SearchResult>> futuresNegative;
+    std::vector<future<SearchResult>> futuresStop;
+    std::vector<FileDetails> fileDetails;
+
+    size_t memBeforePreprocessing = 0, memAfterPreprocessing = 0;
+
     auto totalTimeStart = std::chrono::high_resolution_clock::now();
-    
+    updateMemoryUsage(memBeforePreprocessing);
     // Launch asynchronous tasks
-    int index = 0;
+    size_t index = 0;
     for (auto& file : files) {
         try {
-            string content = Helper::readFile(file);
+            std::string content = Helper::readFile(file);
 
             fileDetails.push_back(FileDetails{ index, file.filename().generic_string(), std::count(content.begin(), content.end(), ' ') + 1 });
 
@@ -161,9 +173,12 @@ void ParellelAnalysis::generateReport() {
     }
 
     auto totalTimeEnd = std::chrono::high_resolution_clock::now();
+    updateMemoryUsage(memAfterPreprocessing);
     chrono::duration<double> totalTimeElapsed = totalTimeEnd - totalTimeStart;
 
-    Result* result = new Result(files.size(), algorithmType, totalTimeElapsed.count(), textAnalysisList);
+    size_t memoryUsage = memAfterPreprocessing - memBeforePreprocessing;
+
+    Result* result = new Result(files.size(), algorithmType, totalTimeElapsed.count(), this->elapsedPreprocess, memoryUsage, this->memoryUsagePreprocessing, textAnalysisList);
 
     if (directoryAnalysisList.size() > 0)
         FileService::generateDirectoryLevelAnalysis(directoryAnalysisList);

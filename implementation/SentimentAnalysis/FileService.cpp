@@ -54,12 +54,12 @@ void FileService::generateDirectoryLevelAnalysis(vector<DirectoryAnalysis*> anal
     }
 
     // Set the width for each column
-    const int fileNameWidth = 40;
-    const int positiveCountWidth = 20;
-    const int negativeCountWidth = 20;
-    const int stopCountWidth = 20;
-    const int polarityCountWidth = 20;
-    const int timeTakenWidth = 10;
+    const size_t fileNameWidth = 40;
+    const size_t positiveCountWidth = 20;
+    const size_t negativeCountWidth = 20;
+    const size_t stopCountWidth = 20;
+    const size_t polarityCountWidth = 20;
+    const size_t timeTakenWidth = 10;
 
     // Print the header to the file
     outFile << left << setw(fileNameWidth) << "FILE NAME"
@@ -109,12 +109,12 @@ void FileService::generateFileLevelAnalysis(vector<FileAnalysis*> analysis)
         cerr << "Could not open the file for writing." << endl;
     }
     string word;
-    int occurency;
+    size_t occurency;
     string wordType;
     // Set the width for each column
-    const int wordWidth = 35;
-    const int occurencyWidth = 12;
-    const int wordTypeWidth = 12;;
+    const size_t wordWidth = 35;
+    const size_t occurencyWidth = 12;
+    const size_t wordTypeWidth = 12;;
 
     // Print the header to the file
     outFile << left << setw(wordWidth) << "WORD"

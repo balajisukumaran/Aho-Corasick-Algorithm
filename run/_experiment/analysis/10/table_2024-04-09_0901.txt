@@ -1,0 +1,12 @@
+FILE NAME                               POSITIVE WORDS      NEGATIVE WORDS      STOP WORDS          POLARITY            TIME TAKEN
+----------------------------------------------------------------------------------------------------------------------------------
+10_The_King_James_Version_of_the_.txt   1176                876                 332                 300                 0.3279153s
+1_The_Declaration_of_Independenc.txt    567                 242                 254                 325                 0.0143075s
+2_The_United_States_Bill_of_Righ.txt    158                 44                  133                 114                 0.0028540s
+3_John_F._Kennedy's_Inaugural_Ad.txt    238                 69                  158                 169                 0.0037325s
+4_Lincoln's_Gettysburg_Address          0                   0                   0                   0                   0.0000006s
+5_The_United_States_Constitution.txt    218                 40                  180                 178                 0.0051398s
+6_Give_Me_Liberty_or_Give_Me_Dea.txt    207                 72                  159                 135                 0.0034911s
+7_The_Mayflower_Compact.txt             138                 29                  120                 109                 0.0022319s
+8_Abraham_Lincoln's_Second_Inaug.txt    183                 46                  156                 137                 0.0025698s
+9_Abraham_Lincoln's_First_Inaugu.txt    319                 108                 192                 211                 0.0045035s

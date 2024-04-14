@@ -10,6 +10,7 @@
 #include <nlohmann/json.hpp>
 #include <algorithm>
 #include <cctype>
+#include <sstream>
 
 using namespace std;
 using json = nlohmann::json;
@@ -63,22 +64,46 @@ public:
         for (auto analysis : model.analysis) {
             jAnalysisArray.push_back(analysisToJson(analysis));
         }
+        stringstream stream;
+        stream << fixed << setprecision(2);
+
+        // Preprocess Time Taken
+        stream << model.preProcessTimeTaken;
+        string preProcessTimeTakenStr = stream.str();
+        stream.str(string()); // Correct way to clear the stream for reuse
+
+        // Total Time Taken
+        stream << model.totalTimeTaken;
+        string totalTimeTakenStr = stream.str();
+        stream.str(string()); // Correct way to clear the stream for reuse
+
+        // Preprocess Memory Used
+        stream << static_cast<double>(model.memoryUsagePreprocess) / 1024;
+        string memoryUsagePreprocessStr = stream.str();
+        stream.str(string()); // Correct way to clear the stream for reuse
+
+        // Total Memory Used
+        stream << static_cast<double>(model.memoryUsage) / 1024;
+        string totalMemoryUsedStr = stream.str();
 
         return json{
-            {"totalFiles", model.totalFiles},
-            {"Algorithm", removeSpecialCharacters(model.algorithm)},
-            {"Total Time Taken", model.totalTimeTaken},
-            {"analysis", jAnalysisArray}
+        {"totalFiles", model.totalFiles},
+        {"Algorithm", removeSpecialCharacters(model.algorithm)},
+        {"Preprocess Time Taken", preProcessTimeTakenStr},
+        {"Total Time Taken", totalTimeTakenStr},
+        {"Preprocess Memory Used", memoryUsagePreprocessStr},
+        {"Total Memory Used", totalMemoryUsedStr},
+        {"analysis", jAnalysisArray}
         };
     }
 
-    static string removeSpecialCharacters(const std::string& input) {
-        std::string result = input;
+    static string removeSpecialCharacters(const string& input) {
+        string result = input;
         result.erase(
-            std::remove_if(
+            remove_if(
                 result.begin(),
                 result.end(),
-                [](unsigned char c) { return !std::isalnum(c); }
+                [](unsigned char c) { return !isalnum(c); }
             ),
             result.end()
         );

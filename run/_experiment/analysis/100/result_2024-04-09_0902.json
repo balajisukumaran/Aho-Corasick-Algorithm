@@ -1,0 +1,1054 @@
+{
+    "Algorithm": "AhoCorasickParellel",
+    "Preprocess Memory Used": "14476.00",
+    "Preprocess Time Taken": "18553100.00",
+    "Total Memory Used": "3368.00",
+    "Total Time Taken": "0.96",
+    "analysis": [
+        {
+            "TimeTaken": 0.6289018,
+            "name": "100TheCompleteWorksofWilliamtxt",
+            "negativeWords": 1939,
+            "polarity": 176,
+            "positiveWords": 2115,
+            "stopWords": 412,
+            "totalWords": 832324
+        },
+        {
+            "TimeTaken": 1e-06,
+            "name": "101TheHackerCrackdown",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.0350987,
+            "name": "102TheTragedyofPuddnheadWilstxt",
+            "negativeWords": 694,
+            "polarity": 358,
+            "positiveWords": 1052,
+            "stopWords": 317,
+            "totalWords": 52042
+        },
+        {
+            "TimeTaken": 0.0454233,
+            "name": "103AroundtheWorldinEightyDaytxt",
+            "negativeWords": 585,
+            "polarity": 465,
+            "positiveWords": 1050,
+            "stopWords": 304,
+            "totalWords": 60279
+        },
+        {
+            "TimeTaken": 0.0038297,
+            "name": "104InauguralAddressofFranklintxt",
+            "negativeWords": 79,
+            "polarity": 197,
+            "positiveWords": 276,
+            "stopWords": 156,
+            "totalWords": 4817
+        },
+        {
+            "TimeTaken": 0.061687900000000004,
+            "name": "105Persuasiontxt",
+            "negativeWords": 678,
+            "polarity": 493,
+            "positiveWords": 1171,
+            "stopWords": 301,
+            "totalWords": 79146
+        },
+        {
+            "TimeTaken": 0.0526139,
+            "name": "106JungleTalesofTarzantxt",
+            "negativeWords": 781,
+            "polarity": 283,
+            "positiveWords": 1064,
+            "stopWords": 290,
+            "totalWords": 70706
+        },
+        {
+            "TimeTaken": 0.1081028,
+            "name": "107FarfromtheMaddingCrowdtxt",
+            "negativeWords": 1147,
+            "polarity": 411,
+            "positiveWords": 1558,
+            "stopWords": 346,
+            "totalWords": 127421
+        },
+        {
+            "TimeTaken": 0.0843623,
+            "name": "108TheReturnofSherlockHolmestxt",
+            "negativeWords": 921,
+            "polarity": 393,
+            "positiveWords": 1314,
+            "stopWords": 306,
+            "totalWords": 169140
+        },
+        {
+            "TimeTaken": 0.0066556,
+            "name": "109RenascenceandOtherPoemstxt",
+            "negativeWords": 206,
+            "polarity": 176,
+            "positiveWords": 382,
+            "stopWords": 223,
+            "totalWords": 11449
+        },
+        {
+            "TimeTaken": 0.44011659999999997,
+            "name": "10TheKingJamesVersionofthetxt",
+            "negativeWords": 876,
+            "polarity": 300,
+            "positiveWords": 1176,
+            "stopWords": 332,
+            "totalWords": 749804
+        },
+        {
+            "TimeTaken": 1.1e-06,
+            "name": "110TessofthedUrbervilles",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.0514498,
+            "name": "111Frecklestxt",
+            "negativeWords": 687,
+            "polarity": 449,
+            "positiveWords": 1136,
+            "stopWords": 301,
+            "totalWords": 78122
+        },
+        {
+            "TimeTaken": 0.015413199999999998,
+            "name": "112Violiststxt",
+            "negativeWords": 280,
+            "polarity": 410,
+            "positiveWords": 690,
+            "stopWords": 272,
+            "totalWords": 23026
+        },
+        {
+            "TimeTaken": 0.0508923,
+            "name": "113TheSecretGardentxt",
+            "negativeWords": 482,
+            "polarity": 350,
+            "positiveWords": 832,
+            "stopWords": 285,
+            "totalWords": 76538
+        },
+        {
+            "TimeTaken": 0.0023703,
+            "name": "114TheTennielIllustrationsfortxt",
+            "negativeWords": 33,
+            "polarity": 109,
+            "positiveWords": 142,
+            "stopWords": 119,
+            "totalWords": 3277
+        },
+        {
+            "TimeTaken": 0.0324143,
+            "name": "115UnitedStatesCensusFiguresBtxt",
+            "negativeWords": 32,
+            "polarity": 150,
+            "positiveWords": 182,
+            "stopWords": 154,
+            "totalWords": 582455
+        },
+        {
+            "TimeTaken": 0.0022578,
+            "name": "117SymphonyNo5inCminorOpustxt",
+            "negativeWords": 28,
+            "polarity": 103,
+            "positiveWords": 131,
+            "stopWords": 115,
+            "totalWords": 3154
+        },
+        {
+            "TimeTaken": 0.0424198,
+            "name": "118BigDummysGuidetotheIntertxt",
+            "negativeWords": 265,
+            "polarity": 430,
+            "positiveWords": 695,
+            "stopWords": 300,
+            "totalWords": 90048
+        },
+        {
+            "TimeTaken": 0.1136089,
+            "name": "119ATrampAbroadtxt",
+            "negativeWords": 1198,
+            "polarity": 491,
+            "positiveWords": 1689,
+            "stopWords": 356,
+            "totalWords": 148166
+        },
+        {
+            "TimeTaken": 0.0180615,
+            "name": "11AlicesAdventuresinWonderlatxt",
+            "negativeWords": 267,
+            "polarity": 244,
+            "positiveWords": 511,
+            "stopWords": 261,
+            "totalWords": 27630
+        },
+        {
+            "TimeTaken": 0.048918699999999996,
+            "name": "120TreasureIslandtxt",
+            "negativeWords": 649,
+            "polarity": 244,
+            "positiveWords": 893,
+            "stopWords": 304,
+            "totalWords": 67120
+        },
+        {
+            "TimeTaken": 0.0195358,
+            "name": "12ThroughtheLookingGlasstxt",
+            "negativeWords": 302,
+            "polarity": 258,
+            "positiveWords": 560,
+            "stopWords": 260,
+            "totalWords": 31146
+        },
+        {
+            "TimeTaken": 6e-07,
+            "name": "13TheHuntingoftheSnark",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.1881579,
+            "name": "14The1990CIAWorldFactbooktxt",
+            "negativeWords": 355,
+            "polarity": 465,
+            "positiveWords": 820,
+            "stopWords": 259,
+            "totalWords": 250544
+        },
+        {
+            "TimeTaken": 0.1573486,
+            "name": "15MobyDickorTheWhaletxt",
+            "negativeWords": 1439,
+            "polarity": 432,
+            "positiveWords": 1871,
+            "stopWords": 392,
+            "totalWords": 197365
+        },
+        {
+            "TimeTaken": 0.0323376,
+            "name": "16PeterPantxt",
+            "negativeWords": 597,
+            "polarity": 261,
+            "positiveWords": 858,
+            "stopWords": 282,
+            "totalWords": 45840
+        },
+        {
+            "TimeTaken": 1.6e-06,
+            "name": "17TheBookofMormon",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.1396983,
+            "name": "18TheFederalistPaperstxt",
+            "negativeWords": 1046,
+            "polarity": 287,
+            "positiveWords": 1333,
+            "stopWords": 314,
+            "totalWords": 181632
+        },
+        {
+            "TimeTaken": 0.0253218,
+            "name": "19TheSongofHiawathatxt",
+            "negativeWords": 411,
+            "polarity": 195,
+            "positiveWords": 606,
+            "stopWords": 236,
+            "totalWords": 29509
+        },
+        {
+            "TimeTaken": 0.0130668,
+            "name": "1TheDeclarationofIndependenctxt",
+            "negativeWords": 242,
+            "polarity": 325,
+            "positiveWords": 567,
+            "stopWords": 254,
+            "totalWords": 18382
+        },
+        {
+            "TimeTaken": 0.060026499999999997,
+            "name": "20ParadiseLosttxt",
+            "negativeWords": 787,
+            "polarity": 271,
+            "positiveWords": 1058,
+            "stopWords": 296,
+            "totalWords": 73038
+        },
+        {
+            "TimeTaken": 6e-07,
+            "name": "21AesopsFables",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.1510765,
+            "name": "22RogetsThesaurustxt",
+            "negativeWords": 2947,
+            "polarity": 126,
+            "positiveWords": 3073,
+            "stopWords": 403,
+            "totalWords": 194573
+        },
+        {
+            "TimeTaken": 0.029855800000000002,
+            "name": "23NarrativeoftheLifeofFredetxt",
+            "negativeWords": 572,
+            "polarity": 369,
+            "positiveWords": 941,
+            "stopWords": 291,
+            "totalWords": 40456
+        },
+        {
+            "TimeTaken": 0.0353304,
+            "name": "24OPioneerstxt",
+            "negativeWords": 569,
+            "polarity": 272,
+            "positiveWords": 841,
+            "stopWords": 285,
+            "totalWords": 53871
+        },
+        {
+            "TimeTaken": 0.14855420000000003,
+            "name": "25The1991CIAWorldFactbooktxt",
+            "negativeWords": 372,
+            "polarity": 498,
+            "positiveWords": 870,
+            "stopWords": 265,
+            "totalWords": 268699
+        },
+        {
+            "TimeTaken": 0.0546881,
+            "name": "26ParadiseLosttxt",
+            "negativeWords": 933,
+            "polarity": 345,
+            "positiveWords": 1278,
+            "stopWords": 316,
+            "totalWords": 72861
+        },
+        {
+            "TimeTaken": 0.08672750000000001,
+            "name": "27FarfromtheMaddingCrowdtxt",
+            "negativeWords": 1135,
+            "polarity": 426,
+            "positiveWords": 1561,
+            "stopWords": 348,
+            "totalWords": 127506
+        },
+        {
+            "TimeTaken": 1.2e-06,
+            "name": "28TheFablesofAesop",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.011314399999999999,
+            "name": "29The1990UnitedStatesCensustxt",
+            "negativeWords": 29,
+            "polarity": 107,
+            "positiveWords": 136,
+            "stopWords": 114,
+            "totalWords": 60066
+        },
+        {
+            "TimeTaken": 0.0023997000000000003,
+            "name": "2TheUnitedStatesBillofRightxt",
+            "negativeWords": 44,
+            "polarity": 114,
+            "positiveWords": 158,
+            "stopWords": 133,
+            "totalWords": 3510
+        },
+        {
+            "TimeTaken": 0.40732769999999996,
+            "name": "30TheBibleKingJamesVersiontxt",
+            "negativeWords": 870,
+            "polarity": 308,
+            "positiveWords": 1178,
+            "stopWords": 333,
+            "totalWords": 744956
+        },
+        {
+            "TimeTaken": 6e-07,
+            "name": "31PlaysofSophocles",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.0346769,
+            "name": "32Herlandtxt",
+            "negativeWords": 580,
+            "polarity": 588,
+            "positiveWords": 1168,
+            "stopWords": 297,
+            "totalWords": 50331
+        },
+        {
+            "TimeTaken": 0.0620648,
+            "name": "33TheScarletLettertxt",
+            "negativeWords": 898,
+            "polarity": 511,
+            "positiveWords": 1409,
+            "stopWords": 343,
+            "totalWords": 78723
+        },
+        {
+            "TimeTaken": 0.0198892,
+            "name": "34ZenandtheArtoftheInternetxt",
+            "negativeWords": 178,
+            "polarity": 409,
+            "positiveWords": 587,
+            "stopWords": 274,
+            "totalWords": 27157
+        },
+        {
+            "TimeTaken": 0.022829699999999998,
+            "name": "35TheTimeMachinetxt",
+            "negativeWords": 526,
+            "polarity": 240,
+            "positiveWords": 766,
+            "stopWords": 275,
+            "totalWords": 32730
+        },
+        {
+            "TimeTaken": 0.036651699999999995,
+            "name": "36TheWaroftheWorldstxt",
+            "negativeWords": 738,
+            "polarity": 178,
+            "positiveWords": 916,
+            "stopWords": 297,
+            "totalWords": 57825
+        },
+        {
+            "TimeTaken": 0.011568700000000001,
+            "name": "37The1990UnitedStatesCensustxt",
+            "negativeWords": 29,
+            "polarity": 108,
+            "positiveWords": 137,
+            "stopWords": 114,
+            "totalWords": 61826
+        },
+        {
+            "TimeTaken": 0.11193310000000001,
+            "name": "38TheJargonFileVersion291txt",
+            "negativeWords": 1187,
+            "polarity": 395,
+            "positiveWords": 1582,
+            "stopWords": 365,
+            "totalWords": 209619
+        },
+        {
+            "TimeTaken": 0.0074364999999999995,
+            "name": "39HitchhikersGuidetotheIntetxt",
+            "negativeWords": 78,
+            "polarity": 237,
+            "positiveWords": 315,
+            "stopWords": 210,
+            "totalWords": 13800
+        },
+        {
+            "TimeTaken": 0.0032497,
+            "name": "3JohnFKennedysInauguralAdtxt",
+            "negativeWords": 69,
+            "polarity": 169,
+            "positiveWords": 238,
+            "stopWords": 158,
+            "totalWords": 4338
+        },
+        {
+            "TimeTaken": 6.0700000000000005e-05,
+            "name": "40NorthWestNetUserServicesInttxt",
+            "negativeWords": 3,
+            "polarity": 5,
+            "positiveWords": 8,
+            "stopWords": 17,
+            "totalWords": 57
+        },
+        {
+            "TimeTaken": 0.0098176,
+            "name": "41TheLegendofSleepyHollowtxt",
+            "negativeWords": 273,
+            "polarity": 342,
+            "positiveWords": 615,
+            "stopWords": 234,
+            "totalWords": 14271
+        },
+        {
+            "TimeTaken": 0.0171974,
+            "name": "42TheStrangeCaseofDrJekylltxt",
+            "negativeWords": 477,
+            "polarity": 273,
+            "positiveWords": 750,
+            "stopWords": 273,
+            "totalWords": 26552
+        },
+        {
+            "TimeTaken": 0.0169792,
+            "name": "43TheStrangeCaseofDrJekylltxt",
+            "negativeWords": 477,
+            "polarity": 270,
+            "positiveWords": 747,
+            "stopWords": 273,
+            "totalWords": 26508
+        },
+        {
+            "TimeTaken": 0.0915803,
+            "name": "44TheSongoftheLarktxt",
+            "negativeWords": 1053,
+            "polarity": 433,
+            "positiveWords": 1486,
+            "stopWords": 307,
+            "totalWords": 141211
+        },
+        {
+            "TimeTaken": 0.0690797,
+            "name": "45AnneofGreenGablestxt",
+            "negativeWords": 812,
+            "polarity": 487,
+            "positiveWords": 1299,
+            "stopWords": 317,
+            "totalWords": 97397
+        },
+        {
+            "TimeTaken": 0.0204205,
+            "name": "46AChristmasCarolinProseBetxt",
+            "negativeWords": 459,
+            "polarity": 299,
+            "positiveWords": 758,
+            "stopWords": 292,
+            "totalWords": 28541
+        },
+        {
+            "TimeTaken": 0.0517798,
+            "name": "47AnneofAvonleatxt",
+            "negativeWords": 768,
+            "polarity": 460,
+            "positiveWords": 1228,
+            "stopWords": 316,
+            "totalWords": 86303
+        },
+        {
+            "TimeTaken": 0.1951194,
+            "name": "48The1992CIAWorldFactbooktxt",
+            "negativeWords": 441,
+            "polarity": 492,
+            "positiveWords": 933,
+            "stopWords": 276,
+            "totalWords": 428903
+        },
+        {
+            "TimeTaken": 1.6e-06,
+            "name": "49SurfingtheInternet",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 5e-07,
+            "name": "4LincolnsGettysburgAddress",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.025081700000000002,
+            "name": "50Pitxt",
+            "negativeWords": 28,
+            "polarity": 123,
+            "positiveWords": 151,
+            "stopWords": 125,
+            "totalWords": 103538
+        },
+        {
+            "TimeTaken": 0.0620476,
+            "name": "51AnneoftheIslandtxt",
+            "negativeWords": 782,
+            "polarity": 398,
+            "positiveWords": 1180,
+            "stopWords": 307,
+            "totalWords": 72658
+        },
+        {
+            "TimeTaken": 0.0162448,
+            "name": "52TheSquareRootof2txt",
+            "negativeWords": 33,
+            "polarity": 116,
+            "positiveWords": 149,
+            "stopWords": 121,
+            "totalWords": 3119
+        },
+        {
+            "TimeTaken": 1.1e-06,
+            "name": "53WorkshoponElectronicTexts",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.028638200000000003,
+            "name": "54TheMarvelousLandofOztxt",
+            "negativeWords": 496,
+            "polarity": 377,
+            "positiveWords": 873,
+            "stopWords": 279,
+            "totalWords": 40794
+        },
+        {
+            "TimeTaken": 0.025010400000000002,
+            "name": "55TheWonderfulWizardofOztxt",
+            "negativeWords": 325,
+            "polarity": 293,
+            "positiveWords": 618,
+            "stopWords": 265,
+            "totalWords": 39202
+        },
+        {
+            "TimeTaken": 5e-07,
+            "name": "56NRENforAll",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.0053950000000000005,
+            "name": "57AladdinandtheMagicLamptxt",
+            "negativeWords": 110,
+            "polarity": 209,
+            "positiveWords": 319,
+            "stopWords": 215,
+            "totalWords": 7855
+        },
+        {
+            "TimeTaken": 0.0122693,
+            "name": "58ParadiseRegainedtxt",
+            "negativeWords": 374,
+            "polarity": 324,
+            "positiveWords": 698,
+            "stopWords": 264,
+            "totalWords": 17909
+        },
+        {
+            "TimeTaken": 0.0172397,
+            "name": "59DiscourseontheMethodofRigtxt",
+            "negativeWords": 241,
+            "polarity": 430,
+            "positiveWords": 671,
+            "stopWords": 273,
+            "totalWords": 24203
+        },
+        {
+            "TimeTaken": 0.0050428,
+            "name": "5TheUnitedStatesConstitutiontxt",
+            "negativeWords": 40,
+            "polarity": 178,
+            "positiveWords": 218,
+            "stopWords": 180,
+            "totalWords": 7314
+        },
+        {
+            "TimeTaken": 0.05237,
+            "name": "60TheScarletPimperneltxt",
+            "negativeWords": 906,
+            "polarity": 371,
+            "positiveWords": 1277,
+            "stopWords": 311,
+            "totalWords": 80839
+        },
+        {
+            "TimeTaken": 0.0101146,
+            "name": "61TheCommunistManifestotxt",
+            "negativeWords": 208,
+            "polarity": 274,
+            "positiveWords": 482,
+            "stopWords": 222,
+            "totalWords": 13332
+        },
+        {
+            "TimeTaken": 0.0450655,
+            "name": "62APrincessofMarstxt",
+            "negativeWords": 653,
+            "polarity": 455,
+            "positiveWords": 1108,
+            "stopWords": 302,
+            "totalWords": 64609
+        },
+        {
+            "TimeTaken": 0.0548177,
+            "name": "64TheGodsofMarstxt",
+            "negativeWords": 746,
+            "polarity": 348,
+            "positiveWords": 1094,
+            "stopWords": 306,
+            "totalWords": 78448
+        },
+        {
+            "TimeTaken": 0.0106043,
+            "name": "65TheFirst100000PrimeNumbertxt",
+            "negativeWords": 29,
+            "polarity": 112,
+            "positiveWords": 141,
+            "stopWords": 118,
+            "totalWords": 3186
+        },
+        {
+            "TimeTaken": 0.019790600000000002,
+            "name": "66TheDawnofAmateurRadiointtxt",
+            "negativeWords": 251,
+            "polarity": 435,
+            "positiveWords": 686,
+            "stopWords": 274,
+            "totalWords": 35840
+        },
+        {
+            "TimeTaken": 0.0543092,
+            "name": "67TheBlackExperienceinAmerictxt",
+            "negativeWords": 770,
+            "polarity": 416,
+            "positiveWords": 1186,
+            "stopWords": 299,
+            "totalWords": 74165
+        },
+        {
+            "TimeTaken": 0.033758300000000005,
+            "name": "68ThewarlordofMarstxt",
+            "negativeWords": 656,
+            "polarity": 315,
+            "positiveWords": 971,
+            "stopWords": 282,
+            "totalWords": 55036
+        },
+        {
+            "TimeTaken": 5e-07,
+            "name": "69The32ndMersennePrime",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.0028718,
+            "name": "6GiveMeLibertyorGiveMeDeatxt",
+            "negativeWords": 72,
+            "polarity": 135,
+            "positiveWords": 207,
+            "stopWords": 159,
+            "totalWords": 4255
+        },
+        {
+            "TimeTaken": 0.0081442,
+            "name": "71OntheDutyofCivilDisobedietxt",
+            "negativeWords": 204,
+            "polarity": 275,
+            "positiveWords": 479,
+            "stopWords": 241,
+            "totalWords": 11637
+        },
+        {
+            "TimeTaken": 0.0329542,
+            "name": "72ThuviaMaidofMarstxt",
+            "negativeWords": 564,
+            "polarity": 314,
+            "positiveWords": 878,
+            "stopWords": 284,
+            "totalWords": 45691
+        },
+        {
+            "TimeTaken": 7e-07,
+            "name": "73TheRedBadgeofCourage",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.0417951,
+            "name": "74TheAdventuresofTomSawyertxt",
+            "negativeWords": 831,
+            "polarity": 277,
+            "positiveWords": 1108,
+            "stopWords": 318,
+            "totalWords": 67406
+        },
+        {
+            "TimeTaken": 0.0153194,
+            "name": "75Email101txt",
+            "negativeWords": 126,
+            "polarity": 378,
+            "positiveWords": 504,
+            "stopWords": 257,
+            "totalWords": 23465
+        },
+        {
+            "TimeTaken": 0.0628916,
+            "name": "76AdventuresofHuckleberryFinntxt",
+            "negativeWords": 521,
+            "polarity": 214,
+            "positiveWords": 735,
+            "stopWords": 283,
+            "totalWords": 104866
+        },
+        {
+            "TimeTaken": 0.071183,
+            "name": "77TheHouseoftheSevenGablestxt",
+            "negativeWords": 1065,
+            "polarity": 518,
+            "positiveWords": 1583,
+            "stopWords": 337,
+            "totalWords": 98584
+        },
+        {
+            "TimeTaken": 0.045833700000000005,
+            "name": "78TarzanoftheApestxt",
+            "negativeWords": 877,
+            "polarity": 288,
+            "positiveWords": 1165,
+            "stopWords": 301,
+            "totalWords": 80711
+        },
+        {
+            "TimeTaken": 0.1417128,
+            "name": "79TerminalCompromisetxt",
+            "negativeWords": 1341,
+            "polarity": 446,
+            "positiveWords": 1787,
+            "stopWords": 353,
+            "totalWords": 249794
+        },
+        {
+            "TimeTaken": 0.0022133,
+            "name": "7TheMayflowerCompacttxt",
+            "negativeWords": 29,
+            "polarity": 109,
+            "positiveWords": 138,
+            "stopWords": 120,
+            "totalWords": 3459
+        },
+        {
+            "TimeTaken": 0.058688199999999996,
+            "name": "80TheOnlineWorldtxt",
+            "negativeWords": 280,
+            "polarity": 577,
+            "positiveWords": 857,
+            "stopWords": 299,
+            "totalWords": 109266
+        },
+        {
+            "TimeTaken": 0.058108400000000004,
+            "name": "81TheReturnofTarzantxt",
+            "negativeWords": 856,
+            "polarity": 305,
+            "positiveWords": 1161,
+            "stopWords": 294,
+            "totalWords": 84395
+        },
+        {
+            "TimeTaken": 5e-07,
+            "name": "82Ivanhoe",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.0672845,
+            "name": "83FromtheEarthtotheMoonantxt",
+            "negativeWords": 682,
+            "polarity": 524,
+            "positiveWords": 1206,
+            "stopWords": 318,
+            "totalWords": 85670
+        },
+        {
+            "TimeTaken": 0.0517943,
+            "name": "84FrankensteinOrTheModernPtxt",
+            "negativeWords": 883,
+            "polarity": 374,
+            "positiveWords": 1257,
+            "stopWords": 307,
+            "totalWords": 71776
+        },
+        {
+            "TimeTaken": 0.045408199999999996,
+            "name": "85TheBeastsofTarzantxt",
+            "negativeWords": 722,
+            "polarity": 248,
+            "positiveWords": 970,
+            "stopWords": 292,
+            "totalWords": 60814
+        },
+        {
+            "TimeTaken": 0.06676409999999999,
+            "name": "86AConnecticutYankeeinKingAtxt",
+            "negativeWords": 1083,
+            "polarity": 334,
+            "positiveWords": 1417,
+            "stopWords": 364,
+            "totalWords": 115628
+        },
+        {
+            "TimeTaken": 0.1957446,
+            "name": "87The1993CIAWorldFactbooktxt",
+            "negativeWords": 470,
+            "polarity": 494,
+            "positiveWords": 964,
+            "stopWords": 282,
+            "totalWords": 375227
+        },
+        {
+            "TimeTaken": 0.0620098,
+            "name": "89NorthAmericanFreeTradeAgretxt",
+            "negativeWords": 258,
+            "polarity": 438,
+            "positiveWords": 696,
+            "stopWords": 245,
+            "totalWords": 127173
+        },
+        {
+            "TimeTaken": 0.0022874,
+            "name": "8AbrahamLincolnsSecondInaugtxt",
+            "negativeWords": 46,
+            "polarity": 137,
+            "positiveWords": 183,
+            "stopWords": 156,
+            "totalWords": 3718
+        },
+        {
+            "TimeTaken": 0.06279799999999999,
+            "name": "90TheSonofTarzantxt",
+            "negativeWords": 898,
+            "polarity": 306,
+            "positiveWords": 1204,
+            "stopWords": 295,
+            "totalWords": 89381
+        },
+        {
+            "TimeTaken": 0.0279723,
+            "name": "91TomSawyerAbroadtxt",
+            "negativeWords": 313,
+            "polarity": 233,
+            "positiveWords": 546,
+            "stopWords": 260,
+            "totalWords": 34121
+        },
+        {
+            "TimeTaken": 0.0475271,
+            "name": "92TarzanandtheJewelsofOpartxt",
+            "negativeWords": 803,
+            "polarity": 196,
+            "positiveWords": 999,
+            "stopWords": 278,
+            "totalWords": 63180
+        },
+        {
+            "TimeTaken": 0.016063,
+            "name": "93TomSawyerDetectivetxt",
+            "negativeWords": 292,
+            "polarity": 181,
+            "positiveWords": 473,
+            "stopWords": 247,
+            "totalWords": 24282
+        },
+        {
+            "TimeTaken": 0.020417499999999998,
+            "name": "94AlexandersBridgetxt",
+            "negativeWords": 376,
+            "polarity": 336,
+            "positiveWords": 712,
+            "stopWords": 269,
+            "totalWords": 29562
+        },
+        {
+            "TimeTaken": 0.0350585,
+            "name": "95ThePrisonerofZendatxt",
+            "negativeWords": 599,
+            "polarity": 350,
+            "positiveWords": 949,
+            "stopWords": 288,
+            "totalWords": 51968
+        },
+        {
+            "TimeTaken": 0.0376811,
+            "name": "96TheMonsterMentxt",
+            "negativeWords": 725,
+            "polarity": 249,
+            "positiveWords": 974,
+            "stopWords": 286,
+            "totalWords": 55559
+        },
+        {
+            "TimeTaken": 6e-07,
+            "name": "97Flatland",
+            "negativeWords": 0,
+            "polarity": 0,
+            "positiveWords": 0,
+            "stopWords": 0,
+            "totalWords": 1
+        },
+        {
+            "TimeTaken": 0.0866168,
+            "name": "98ATaleofTwoCitiestxt",
+            "negativeWords": 1126,
+            "polarity": 339,
+            "positiveWords": 1465,
+            "stopWords": 344,
+            "totalWords": 127059
+        },
+        {
+            "TimeTaken": 0.0078648,
+            "name": "99CollectedArticlesofFrederictxt",
+            "negativeWords": 205,
+            "polarity": 258,
+            "positiveWords": 463,
+            "stopWords": 236,
+            "totalWords": 10410
+        },
+        {
+            "TimeTaken": 0.0047605,
+            "name": "9AbrahamLincolnsFirstInaugutxt",
+            "negativeWords": 108,
+            "polarity": 211,
+            "positiveWords": 319,
+            "stopWords": 192,
+            "totalWords": 6368
+        }
+    ],
+    "totalFiles": 116
+}

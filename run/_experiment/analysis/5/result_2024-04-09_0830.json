@@ -1,0 +1,46 @@
+{
+    "Algorithm": "AhoCorasickSequential",
+    "Preprocess Memory Used": "14588.00",
+    "Preprocess Time Taken": "18358900.00",
+    "Total Memory Used": "424.00",
+    "Total Time Taken": "0.07",
+    "analysis": [
+        {
+            "TimeTaken": 0.0119132,
+            "name": "1TheDeclarationofIndependenctxt",
+            "negativeWords": 242,
+            "polarity": 325,
+            "positiveWords": 567,
+            "stopWords": 254,
+            "totalWords": 18382
+        },
+        {
+            "TimeTaken": 0.0027853,
+            "name": "2TheUnitedStatesBillofRightxt",
+            "negativeWords": 44,
+            "polarity": 114,
+            "positiveWords": 158,
+            "stopWords": 133,
+            "totalWords": 3510
+        },
+        {
+            "TimeTaken": 0.0032592,
+            "name": "3JohnFKennedysInauguralAdtxt",
+            "negativeWords": 69,
+            "polarity": 169,
+            "positiveWords": 238,
+            "stopWords": 158,
+            "totalWords": 4338
+        },
+        {
+            "TimeTaken": 0.004652,
+            "name": "5TheUnitedStatesConstitutiontxt",
+            "negativeWords": 40,
+            "polarity": 178,
+            "positiveWords": 218,
+            "stopWords": 180,
+            "totalWords": 7314
+        }
+    ],
+    "totalFiles": 4
+}

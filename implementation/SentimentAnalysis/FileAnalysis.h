@@ -17,7 +17,7 @@ public:
     /// <summary>
     /// count 
     /// </summary>
-    int occurency;
+    size_t occurency;
 
     /// <summary>
     /// word type
@@ -30,7 +30,7 @@ public:
     /// <param name="word"></param>
     /// <param name="occurency"></param>
     /// <param name="wordType"></param>
-    FileAnalysis(const string& word, int occurency, const string& wordType)
+    FileAnalysis(const string& word, size_t occurency, const string& wordType)
         : word(word), occurency(occurency), wordType(wordType)
     {
     }

@@ -1,0 +1,6 @@
+FILE NAME                               POSITIVE WORDS      NEGATIVE WORDS      STOP WORDS          POLARITY            TIME TAKEN
+----------------------------------------------------------------------------------------------------------------------------------
+1_The_Declaration_of_Independenc.txt    567                 242                 254                 325                 0.0132852s
+2_The_United_States_Bill_of_Righ.txt    158                 44                  133                 114                 0.0030649s
+3_John_F._Kennedy's_Inaugural_Ad.txt    238                 69                  158                 169                 0.0036139s
+5_The_United_States_Constitution.txt    218                 40                  180                 178                 0.0053431s

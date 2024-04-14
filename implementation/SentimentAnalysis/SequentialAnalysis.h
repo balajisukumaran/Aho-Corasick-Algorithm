@@ -20,7 +20,6 @@
 #include "boost/property_tree/ptree.hpp"
 #include "boost/property_tree/ini_parser.hpp"
 
-using namespace std;
 using namespace boost::property_tree;
 
 /// <summary>
@@ -29,18 +28,19 @@ using namespace boost::property_tree;
 class SequentialAnalysis : public IAnalysis {
 
 private:
-    string path;
-    string stopWordsPath;
-    string positiveWordsPath;
-    string negativeWordsPath;
-    vector<string> positiveWords;
-    vector<string> negativeWords;
-    vector<string> stopWords;
+    std::string path;
+    std::string stopWordsPath;
+    std::string positiveWordsPath;
+    std::string negativeWordsPath;
+    std::vector<std::string> positiveWords;
+    std::vector<std::string> negativeWords;
+    std::vector<std::string> stopWords;
     IPatternMatching* positiveMatch;
     IPatternMatching* negativeMatch;
     IPatternMatching* stopMatch;
-    string algorithmType;
-
+    std::string algorithmType;
+    size_t memoryUsagePreprocessing;
+    double elapsedPreprocess; 
 public:
 
     /// <summary>
@@ -48,15 +48,15 @@ public:
     /// </summary>
     /// <param name="path"></param>
     /// <param name="algorithm"></param>
-    SequentialAnalysis(string& path, int algorithm)
+    SequentialAnalysis(std::string& path, size_t algorithm)
     {
         ptree pt;
         ini_parser::read_ini("config.ini", pt);
     
         this->path = path;
-        this->stopWordsPath = pt.get<string>("file.stop_words_file");
-        this->positiveWordsPath = pt.get<string>("file.positive_words_file");
-        this->negativeWordsPath = pt.get<string>("file.negative_words_file");
+        this->stopWordsPath = pt.get<std::string>("file.stop_words_file");
+        this->positiveWordsPath = pt.get<std::string>("file.positive_words_file");
+        this->negativeWordsPath = pt.get<std::string>("file.negative_words_file");
 
         positiveWords = Helper::readWordsFromFile(positiveWordsPath);
         negativeWords = Helper::readWordsFromFile(negativeWordsPath);

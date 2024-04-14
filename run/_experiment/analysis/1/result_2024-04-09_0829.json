@@ -1,0 +1,19 @@
+{
+    "Algorithm": "AhoCorasickSequential",
+    "Preprocess Memory Used": "14536.00",
+    "Preprocess Time Taken": "15325200.00",
+    "Total Memory Used": "1128.00",
+    "Total Time Taken": "0.46",
+    "analysis": [
+        {
+            "TimeTaken": 0.4191904,
+            "name": "100TheCompleteWorksofWilliamtxt",
+            "negativeWords": 1939,
+            "polarity": 176,
+            "positiveWords": 2115,
+            "stopWords": 412,
+            "totalWords": 832324
+        }
+    ],
+    "totalFiles": 1
+}

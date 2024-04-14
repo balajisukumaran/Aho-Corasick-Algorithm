@@ -1,0 +1,19 @@
+{
+    "Algorithm": "TrieSearchParellel",
+    "Preprocess Memory Used": "14316.00",
+    "Preprocess Time Taken": "12398500.00",
+    "Total Memory Used": "1128.00",
+    "Total Time Taken": "0.25",
+    "analysis": [
+        {
+            "TimeTaken": 0.5094389,
+            "name": "100TheCompleteWorksofWilliamtxt",
+            "negativeWords": 1939,
+            "polarity": 174,
+            "positiveWords": 2113,
+            "stopWords": 412,
+            "totalWords": 832324
+        }
+    ],
+    "totalFiles": 1
+}

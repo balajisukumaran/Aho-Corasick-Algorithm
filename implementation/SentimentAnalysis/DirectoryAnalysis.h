@@ -17,22 +17,22 @@ public:
     /// <summary>
     /// number of positive words
     /// </summary>
-    int positiveCount;
+    size_t positiveCount;
 
     /// <summary>
     /// number of negative words
     /// </summary>
-    int negativeCount;
+    size_t negativeCount;
 
     /// <summary>
     /// number of stop words
     /// </summary>
-    int stopCount;
+    size_t stopCount;
 
     /// <summary>
     /// polarity of the file
     /// </summary>
-    int polarity;
+    size_t polarity;
 
     /// <summary>
     /// time taken in seconds
@@ -48,7 +48,7 @@ public:
     /// <param name="stopCount">stop count</param>
     /// <param name="polarity">polarity of a file</param>
     /// <param name="timeTaken">time taken to calculate</param>
-    DirectoryAnalysis(const string& fileName, int positiveCount, int negativeCount, int stopCount, int polarity, const string& timeTaken)
+    DirectoryAnalysis(const string& fileName, size_t positiveCount, size_t negativeCount, size_t stopCount, size_t polarity, const string& timeTaken)
         : fileName(fileName), positiveCount(positiveCount), negativeCount(negativeCount), stopCount(stopCount), polarity(polarity), timeTaken(timeTaken)
     {
     }

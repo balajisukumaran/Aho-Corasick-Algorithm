@@ -10,7 +10,6 @@
 #include "boost/property_tree/ptree.hpp"
 #include "boost/property_tree/ini_parser.hpp"
 
-using namespace std;
 using namespace boost::property_tree;
 
 /// <summary>
@@ -22,9 +21,9 @@ void main()
         ptree pt;
         ini_parser::read_ini("config.ini", pt);
 
-        string input = pt.get<string>("file.input_path");
-        int algorithm = pt.get<int>("algorithm.type");
-        int parellel = pt.get<int>("algorithm.parellel");
+        std::string input = pt.get<std::string>("file.input_path");
+        size_t algorithm = pt.get<int>("algorithm.type");
+        size_t parellel = pt.get<int>("algorithm.parellel");
 
         IAnalysis* analysis;
 
@@ -43,7 +42,6 @@ void main()
 
         // Stop the console from closing.
         std::cout << "Press Enter to continue...";
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     }
 
     return;

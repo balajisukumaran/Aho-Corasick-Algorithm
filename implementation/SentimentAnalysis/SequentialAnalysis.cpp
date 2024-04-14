@@ -20,16 +20,25 @@
 #include "SequentialAnalysis.h"
 #include "Analysis.cpp"
 
-using namespace std;
 using namespace boost::property_tree;
 
 /// <summary>
 /// assign patterns and approiate classes based on the config file
 /// </summary>
 void SequentialAnalysis::assignPatterns() {
+    size_t memBeforePreprocessing = 0, memAfterPreprocessing = 0;
+
+    updateMemoryUsage(memBeforePreprocessing);
+    auto start = std::chrono::high_resolution_clock::now();
+    
     this->positiveMatch->preProcessing(positiveWords);
     this->stopMatch->preProcessing(stopWords);
     this->negativeMatch->preProcessing(negativeWords);
+
+    updateMemoryUsage(memAfterPreprocessing);
+    auto finish = std::chrono::high_resolution_clock::now();
+    this->elapsedPreprocess = (finish - start).count();
+    this->memoryUsagePreprocessing = memAfterPreprocessing - memBeforePreprocessing;
 }
 
 /// <summary>
@@ -42,7 +51,10 @@ void SequentialAnalysis::generateReport() {
     vector<FileAnalysis*> fileAnalysisList;
     vector<TextAnalysis*> textAnalysisList;
 
+    size_t memBeforePreprocessing = 0, memAfterPreprocessing = 0;
+
     auto totalTimeStart = std::chrono::high_resolution_clock::now();
+    updateMemoryUsage(memBeforePreprocessing);
     for (auto& file : files) {
         try {
             string content = Helper::readFile(file);
@@ -104,10 +116,14 @@ void SequentialAnalysis::generateReport() {
         }
     }
     auto totalTimeEnd = std::chrono::high_resolution_clock::now();
+    updateMemoryUsage(memAfterPreprocessing);
+
     chrono::duration<double> totalTimeElapsed = totalTimeEnd - totalTimeStart;
 
 
-    Result* result = new Result(files.size(), algorithmType, totalTimeElapsed.count(), textAnalysisList);
+    size_t memoryUsage = memAfterPreprocessing - memBeforePreprocessing;
+
+    Result* result = new Result(files.size(), algorithmType, totalTimeElapsed.count(), this->elapsedPreprocess, memoryUsage, this->memoryUsagePreprocessing, textAnalysisList);
 
     if (directoryAnalysisList.size() > 0)
         FileService::generateDirectoryLevelAnalysis(directoryAnalysisList);

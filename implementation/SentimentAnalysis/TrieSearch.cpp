@@ -44,11 +44,11 @@ map<string, int> TrieSearch::searchIn(const string& storyContent) {
     map<string, int> result;
     string sentence = " " + storyContent + " ";  // Add padding to handle beginning and end of string.
 
-    for (int i = 1; i < sentence.length() - 1; ) {
+    for (size_t i = 1; i < sentence.length() - 1; ) {
         Node* current = this->root;
         string wordFound;
 
-        for (int j = i; j < sentence.length() - 1; j++) {
+        for (size_t j = i; j < sentence.length() - 1; j++) {
             char c = sentence[j];
 
             if (current->child.find(c) == current->child.end()) {
