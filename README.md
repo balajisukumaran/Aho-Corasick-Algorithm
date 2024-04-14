@@ -102,9 +102,9 @@ To run the application:
 
 For detailed instructions on running specific parts of the application, please refer to the following README files:
 
-1. [Gutendex](./gutendex/README.md)
-2. [Modelling](./modelling/README.md)
-3. [Implementation](./implementation/README.md)
+1. [Gutendex](./gutendex/README.md), to bulk download dataset for our application.
+2. [Modelling](./modelling/README.md), model and visualize how the wordbag looks like within Aho-corasick automaton or Trie search data structure.
+3. [Implementation](./implementation/README.md), run the sentiment analysis.
 
 ## Contributing
 
